@@ -1,0 +1,96 @@
+cument.frm.cel.value !="")
+	{
+		if(document.frm.cel.length < 7) 
+		{
+			campoNum = campoNum + '- Tamanho inválido do Telefone Celular. ' + '\n';
+			if (PrimeiroErro == "")
+			{
+				teste_tel = 1;
+				Passou = 11;
+				PrimeiroErro = "cel";
+			}
+		}
+	}
+	
+	if((teste_ddd == 0)&&(teste_tel == 0))
+	{
+		if((document.frm.ddd_cel.value !="") && (document.frm.cel.value ==""))
+		{
+			campo = campo + '- Telefone Celular. ' + '\n';		
+			if (PrimeiroErro == "")
+			{
+				PrimeiroErro = "cel";
+			}
+		}
+		else
+		{
+			if((document.frm.ddd_cel.value =="") && (document.frm.cel.value !=""))
+			{
+				campo = campo + '- DDD - Telefone Celular. ' + '\n';		
+				if (PrimeiroErro == "")
+				{
+					PrimeiroErro = "ddd_cel";
+				}
+			}
+		}
+	}
+	
+	//Recado
+	if(document.frm.recado.checked)
+	{
+		if(document.frm.contato.value=="")
+		{
+			campo = campo + '- Nome para contato. ' + '\n';		
+			if (PrimeiroErro == "")
+			{
+				PrimeiroErro = "contato";
+			}
+		}	
+	}
+	
+	// Deficiente
+	if (
+		(document.frm.deficiencia[0].checked == false) && 
+		(document.frm.deficiencia[1].checked == false)
+		)
+	{	
+		campo = campo + '- Pessoa com deficiência. ' + '\n';		
+		if (PrimeiroErro == "")
+		{
+			PrimeiroErro = "deficiencia[0]";
+		}
+	}
+}	
+	
+/*--------------------------------------------------------------------------------------------------
+	ÁREAS DE INTERESSE
+--------------------------------------------------------------------------------------------------*/		
+if(valor == 2)
+{
+	// Áreas de interesse
+	if (Checks(10,"area") == 0)
+	{
+		campo = campo + '- Pelo menos uma Área de Interesse deve ser selecionada. ' + '\n';		
+		if (PrimeiroErro == "")
+		{
+			PrimeiroErro = "area1";
+			
+		}
+	}
+	else
+	// Se algum foi selecionado verifica se foi o outros
+	{
+		if(document.frm.area10.checked == true && document.frm.TextOutros1.value == "") 
+		{
+			campo = campo + '- Descrição - Área de Interesse. ' + '\n';		
+			if (PrimeiroErro == "")
+			{
+				PrimeiroErro = "TextOutros1";
+				
+			}
+		} 
+	}
+		
+		
+	// Informática
+	if (Checks(6,"informatica2") == 0)

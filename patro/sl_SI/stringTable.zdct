@@ -1,0 +1,99 @@
+ex == 0)
+		{
+			campo = campo + '- Nível - Japonês. ' + '\n';		
+			if (PrimeiroErro == "")
+			{
+				PrimeiroErro = "nivel_jap";
+				
+			}
+		}
+	}
+		
+	//Outros Idiomas
+		
+	//Outros Idiomas 01
+	if ((document.frm.le_outro1.checked) ||(document.frm.escreve_outro1.checked) ||(document.frm.fala_outro1.checked))
+	{
+			
+		if(document.frm.outro_1.value == "")
+		{
+			campo = campo + '- Descrição Outro Idioma 01. ' + '\n';		
+			if (PrimeiroErro == "")
+			{
+				PrimeiroErro = "outro_1";
+				
+			}
+		}
+					
+		if(document.frm.nivel_outro1.selectedIndex == 0)
+		{
+			campo = campo + '- Nível - Outro Idioma 01. ' + '\n';		
+			if (PrimeiroErro == "")
+			{
+				PrimeiroErro = "nivel_outro1";
+				
+			}
+		}
+	}
+	else
+	{
+		if(document.frm.outro_1.value  != "")
+		{
+			campo = campo + '- Preencha todos os dados referente ao Outro Idioma 01. ' + '\n';		
+			if (PrimeiroErro == "")
+			{
+				PrimeiroErro = "outro_1";
+			}
+		}	
+	
+	}
+		
+		
+	//Outros Idiomas 02
+	if ((document.frm.le_outro2.checked) ||(document.frm.escreve_outro2.checked) ||(document.frm.fala_outro2.checked))
+	{
+			
+		if(document.frm.outro_2.value == "")
+		{
+			campo = campo + '- Descrição Outro Idioma 02. ' + '\n';		
+			if (PrimeiroErro == "")
+			{
+				PrimeiroErro = "outro_2";
+				
+			}
+		}
+					
+		if(document.frm.nivel_outro2.selectedIndex == 0)
+		{
+			campo = campo + '- Nível - Outro Idioma 02. ' + '\n';		
+			if (PrimeiroErro == "")
+			{
+				PrimeiroErro = "nivel_outro2";
+				
+			}
+		}
+	}	
+	else
+	{
+		if(document.frm.outro_2.value  != "")
+		{
+			campo = campo + '- Preencha todos os dados referente ao Outro Idioma 02. ' + '\n';		
+			if (PrimeiroErro == "")
+			{
+				PrimeiroErro = "outro_2";
+			}
+		}	
+	
+	}
+}
+	
+/*--------------------------------------------------------------------------------------------------
+	FORMAÇÃO ACADÊMICA
+--------------------------------------------------------------------------------------------------*/		
+if(valor == 3)
+{
+	//Ensino Funcamental - 1º Grau
+	if (
+		(document.frm.situacao_1[0].checked == false) &&
+		(document.frm.situacao_1[1].checked == false) &&
+		(do

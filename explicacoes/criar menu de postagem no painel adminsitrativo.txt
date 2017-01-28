@@ -1,0 +1,6 @@
+Passos para a criação de um menuo para inserir via portal adminsitrativo no site:
+1) Adicionar o treco no arquivo cria_post.php
+2) no functions.php criar a função desse elemento
+3) chamar essa funçãoi na page desse elemento
+
+cadastra_post.php

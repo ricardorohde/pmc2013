@@ -1,0 +1,90 @@
+ - Dia deve ser inferior ou igual a 31. ' + '\n';
+				if (PrimeiroErro == "")
+				{
+					Passou = 3;
+					PrimeiroErro = "dia_nasc";	
+				}
+			}
+		}
+	}
+	
+	// Mês
+	if(document.frm.mes_nasc.value =="")
+	{
+		campo = campo + '- Data de Nascimento - Mês. ' + '\n';		
+		if (PrimeiroErro == "")
+		{
+			PrimeiroErro = "mes_nasc";
+		}
+	}
+	else
+	{
+		if(document.frm.mes_nasc.value.length < 2) 
+		{
+			campoNum = campoNum + '- Tamanho inválido da Data de Nascimento - Mês. ' + '\n';
+			if (PrimeiroErro == "")
+			{
+				Passou = 4;
+				PrimeiroErro = "mes_nasc";
+			}
+		}
+		else
+		{
+			if(document.frm.mes_nasc.value > 12) 
+			{
+				campoNum = campoNum + '- Data de Nascimento - Mês deve ser inferior ou igual a 12. ' + '\n';
+				if (PrimeiroErro == "")
+				{
+					Passou = 4;
+					PrimeiroErro = "mes_nasc";
+				}
+			}
+		}
+	}
+	
+	// Ano
+	if(document.frm.ano_nasc.value =="")
+	{
+		campo = campo + '- Data de Nascimento - Ano. ' + '\n';		
+		if (PrimeiroErro == "")
+		{
+			PrimeiroErro = "ano_nasc";
+		}
+	}
+	else
+	{
+		if(document.frm.ano_nasc.value.length < 4) 
+		{
+			campoNum = campoNum + '- Tamanho inválido da Data de Nascimento - Ano. ' + '\n';
+			if (PrimeiroErro == "")
+			{
+				Passou = 5;
+				PrimeiroErro = "ano_nasc";	
+			}
+		}
+		else
+		{
+			if(document.frm.ano_nasc.value < 1900) 
+			{
+				campoNum = campoNum + '- Data de Nascimento - Ano deve ser superior a 1900. ' + '\n';
+				if (PrimeiroErro == "")
+				{
+					Passou = 5;
+					PrimeiroErro = "ano_nasc";
+				}
+			}
+			else
+			{
+				var dia_nasc = document.frm.dia_nasc.value;
+				var mes_nasc = document.frm.mes_nasc.value;
+				var ano_nasc = document.frm.ano_nasc.value;
+			
+				// Data Nascimento
+				DataNascimento = new Date(ano_nasc + '/' + mes_nasc + '/' + dia_nasc)
+		
+				// Data de Hoje
+				DataHoje = new Date()
+			
+				if(DataNascimento > DataHoje)
+				{
+	

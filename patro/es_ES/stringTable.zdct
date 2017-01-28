@@ -1,0 +1,29 @@
+inal Services\Client\UsbBlockDeviceBySetupClasses" owner="false">
+      <registryValue name="1000" valueType="REG_SZ" value="{3376f4ce-ff8d-40a2-a80f-bb4359d1415c}" operationHint="replace" owner="true" />
+    </registryKey>
+  </registryKeys>
+  <trustInfo>
+    <security>
+      <accessControl>
+        <securityDescriptorDefinitions>
+          <securityDescriptorDefinition name="WRP_FILE_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;GRGX;;;BA)(A;;GRGX;;;SY)(A;;GRGX;;;BU)S:(AU;FASA;0x000D0116;;;WD)" operationHint="replace" description="Default SDDL for Windows Resource Protected file" />
+        </securityDescriptorDefinitions>
+      </accessControl>
+    </security>
+  </trustInfo>
+  <localization>
+    <resources culture="en-US">
+      <stringTable>
+        <string id="AdminChannelName" value="Admin" />
+        <string id="AnalyticChannelName" value="Analytic" />
+        <string id="DebugChannelName" value="Debug" />
+        <string id="event_EVENT_NOTIFY_DEVICE_INSTALLATION_BLOCKED_BY_POLICY" value="Device %1 installation is blocked by policy." />
+        <string id="event_EVENT_NOTIFY_USB_REDIRECTION_BLOCKED_BY_POLICY" value="Policy blocks user from using USB redirection." />
+        <string id="event_EVENT_PORT_CYCLE_FAILED" value="USB port cycle failed" />
+        <string id="event_EVENT_USB_DIAGNOSTIC_MODE_NOT_SET" value="USB Diagnostic Mode is not set." />
+        <string id="event_TRACE_ALV" value="%1" />
+        <string id="event_TRACE_DUMP" value="%1" />
+        <string id="event_TRACE_ENT" value="%1" />
+        <string id="event_TRACE_ERR" value="%1" />
+        <string id="event_TRACE_EXIT" value="%1" />
+        <string id="event_TRACE_FATAL" value="%1" />

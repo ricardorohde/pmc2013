@@ -1,0 +1,102 @@
+rimeiroErro == '')
+			{
+				PrimeiroErro = "email";
+				Passou = 6;
+			}
+		}
+	}
+		
+	// Estado Civil
+	if (document.frm.civil.selectedIndex == 0)
+	{
+		campo = campo + '- Estado Civil. ' + '\n';		
+		if (PrimeiroErro == "")
+		{
+			PrimeiroErro = "civil";
+		}
+	}
+	
+	// Nome da Mãe
+	if (document.frm.mae.value =="")
+	{
+		campo = campo + '- Nome da Mãe. ' + '\n';		
+		if (PrimeiroErro == "")
+		{
+			PrimeiroErro = "mae";
+		}
+	}
+	else
+	{
+		var tamcomp = parseInt(document.frm.mae.value.length);
+		var poscomp = parseInt(document.frm.mae.value.indexOf(' '));
+		
+		if((tamcomp-1 <= poscomp)||(poscomp < 1))
+		{
+			campoNum = campoNum + '- Digite o Nome da Mãe completo. ' + '\n';
+			if (PrimeiroErro == "")
+			{
+				Passou = 7;
+				PrimeiroErro = "mae";
+			}
+		}	
+	}
+	
+	// Nome do Pai
+	if (document.frm.pai.value !="")
+	{
+		var tamcomp1 = parseInt(document.frm.pai.value.length);
+		var poscomp1 = parseInt(document.frm.pai.value.indexOf(' '));
+		
+		if((tamcomp1-1 <= poscomp1)||(poscomp1 < 1))
+		{
+			campoNum = campoNum + '- Digite o Nome do Pai completo. ' + '\n';
+			if (PrimeiroErro == "")
+			{
+				Passou = 7;
+				PrimeiroErro = "pai";
+			}
+		}	
+	}
+			
+	// Rua/Av
+	if (document.frm.rua.value =="")
+	{
+		campo = campo + '- Rua/Av. ' + '\n';		
+		if (PrimeiroErro == "")
+		{
+			PrimeiroErro = "rua";
+		}
+	}
+	
+	// Número
+	if (document.frm.numero.value =="")
+	{
+		campo = campo + '- Número. ' + '\n';		
+		if (PrimeiroErro == "")
+		{
+			PrimeiroErro = "numero";
+		}
+	}
+	
+	// Bairro
+	if (document.frm.bairro.value =="")
+	{
+		campo = campo + '- Bairro. ' + '\n';		
+		if (PrimeiroErro == "")
+		{
+			PrimeiroErro = "bairro";
+		}
+	}
+		
+	// Cidade
+	if (document.frm.cidade.value =="")
+	{
+		campo = campo + '- Cidade. ' + '\n';		
+		if (PrimeiroErro == "")
+		{
+			PrimeiroErro = "cidade";
+		}
+	}
+	
+	// Estado
+	if (document.frm

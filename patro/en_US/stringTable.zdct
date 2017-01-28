@@ -1,0 +1,21 @@
+ keyName="HKEY_CLASSES_ROOT\Interface\{04B825B1-AC9A-4F7B-B5AD-C7168F1EE445}\ProxyStubClsid32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{B5F8FB3B-393F-4F7C-84CB-504924C2705A}" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{057A6296-029B-4154-B79A-0D461D4EA94C}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="ITfRangeACP" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{057A6296-029B-4154-B79A-0D461D4EA94C}\NumMethods" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="27" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{057A6296-029B-4154-B79A-0D461D4EA94C}\ProxyStubClsid32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{B5F8FB3B-393F-4F7C-84CB-504924C2705A}" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{09D146CD-A544-4132-925B-7AFA8EF322D0}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="ITfMouseTracker" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{09D146CD-A544-4132-925B-7AFA8EF322D0}\NumMethods" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="5" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{09D146CD-A544-4132-9

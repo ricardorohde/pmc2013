@@ -1,0 +1,875 @@
+@charset "iso-8859-1";
+/*@import url(http://fonts.googleapis.com/css?family=Lobster);*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #edf3f5;
+	width: 100%;
+
+}
+
+a{
+	font-size: 11px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #000099;
+	text-decoration: none;
+}
+
+a:hover{
+	font-size: 13px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #09c;
+	text-decoration: none;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! CLASSES GERAIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.titulos{
+	background-color: #f2f6fa;
+	height: 20px;
+	padding: 2px;
+}
+
+.info{
+	font-size: 12px;
+	font-family: sans-serif;
+	color: #666;
+	margin: 2px 2px 5px 2px;
+}
+header{
+	background-image: url(../imgs/fundo/sas.png);
+	top: 0;
+	width: 100%;/*Coloca o tamanho do cabeçalho do ste como sendo 100% da tela*/
+	height: 620px;/*Define a autura do cabeçalho do site*/
+	/*margin: 4px auto;*/ /*o auto centraliza o conteudo do site e a  margin 4px afasta todo o site 4px das bordas*/
+	/*background-color: green;*/
+}
+
+header img{
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+	padding: 2px;	
+}
+
+
+
+#transparencia{
+	width: 100%;
+	height: 20px;
+	background-color: #009900;
+	margin-top: 0px;
+}
+ 
+#transparencia h2{
+	font-size: 13px;
+	font-family: sans-serif;
+	color: ;
+	text-decoration: none;
+	text-align: center;
+}
+
+#transparencia a{
+	color: #fff;
+	text-decoration: none;
+}
+
+
+#redes{
+	margin-top: 8px;
+	padding-top: 0;
+	list-style: none;	
+	float: right;
+	position: relative;
+}
+#redes img{
+	float: right;
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	padding: 2px;
+
+}
+#redes ul li{
+	list-style: none;
+	display: inline;
+	text-align: center;
+}
+
+
+#nav{
+	width: 100%;/*Largura do menu*/
+	height: 32px; /*Altura do menu */
+	margin: auto; /*Centraliza o conteudo da nav*/
+	background-color: #000; 
+	font-size: 12px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 4px;
+}
+
+#nav ul{
+	padding: 0;
+	margin: 0;
+	float: left; /*Coloca ele para a esquerda*/
+	width: 100%;/*Are ade ocupação*/
+	height: 32px;/*Altura da area de menus*/
+	background-color: #069;
+	list-style: none;/*Retira a exibição em lista*/
+}
+
+#nav ul li{
+	display: inline; /*Exibe em linha*/
+	height: 32px;
+}
+
+#nav ul li a{
+	height: 23px;
+	padding: 4px 10px 2px 10px;
+	float: left;
+	background-color: #069;
+	color: #fff;
+	text-decoration: none;
+	border-top: 3px solid #069;
+	border-right: 1px solid #fff;
+}
+
+
+/*Efeitos no menus do site*/
+#nav ul li a:hover{
+	background-color: #d6d6d6;/*Define a cor do fundo do menu quando passar o mouse por cima*/
+	height: 23px;/*Tamanho do menu*/
+	color: #6d6d6d;/*Cor da fonte*/
+	border-top: 3px solid #ea0000;/*Cria a barrinha vermelha solida acima do link posissionado*/
+}
+
+
+/*Area geral do site*/
+
+#geral {
+	width: 100%; /*Coloco a area geral do site para ser 100% da area de cobertura*/
+	margin: auto;
+	background-color: #FFF;
+}
+
+#googlenews{
+	width: 100%; /*Coloco a area geral do site para ser 100% da area de cobertura*/
+	height: 90px;
+	margin: auto;
+}
+
+#googlenews .noticias{
+	width: 728px;
+	height: 90px;
+	float: left;
+}
+
+#googlenews .redes{
+	width: 10%
+	height:90px;
+	float: right;
+}
+
+#main{
+	width: 65%; /*CTamanho da area*/
+	height: 1270px; /*Cumprimento para baixo do site*/
+	float: left;
+	background-color: #fff;
+	border-top: 1px solid #ccc;
+}
+
+#main .post{
+	margin: 1px;
+}
+
+#main .post h1{
+	/*font-size: ;*/
+	font: 16px sans-serif;
+	/*font-family: sans-serif;*/
+	font-weight: bold;
+	color: #000;
+	margin: 5px 2px 2px 5px;
+
+
+}
+
+#main .post p{
+	font: 12px sans-serif;
+	/*font-family: sans-serif;*/
+	font-weight: bold;
+	color: #000;
+	margin: 3px;
+	text-align: justify;
+}
+
+#main .post  img{
+	width: 208px;
+	padding: 2px;
+	margin: 1px;
+	border: 2px solid #666;
+}
+
+
+/*################################ Abas da regiao central do site########################################*/
+#tabs{
+	font-size: 75%;
+	font-family: sans-serif;
+	height: 250px;
+	margin: 1px;
+}
+
+#tabs img{
+	width: 80px;
+	height: 75px;
+	margin: 2px;
+	float: left;
+	border: 2px solid #333;
+	display: block;
+}
+
+/*################################ Tabs-1 Noticias ########################################*/
+#tabs-1 ul{
+	margin: 0px;
+	padding: 2px;
+	float: left;
+	list-style: none;
+
+}
+
+#tabs-1 ul li{
+	float: right;
+	width: 232px;
+	border-bottom: 1px dotted #069; /*Borda a baixo*/
+	padding: 2px;
+}
+
+#tabs-1 ul li p{
+	font-size: 12px;
+	font-family: Tahoma, Geneva, sans-serif;
+	margin: 0px;
+}
+
+/*################################ Tabs-2 Eventos ########################################*/
+#tabs-2 ul{
+	margin: 0px;
+	padding: 2px;
+	float: left;
+	list-style: none;
+
+}
+
+#tabs-2 ul li{
+	float: right;
+	width: 232px;
+	border-bottom: 1px dotted #069; /*Borda a baixo*/
+	padding: 2px;
+}
+
+#tabs-2 ul li p{
+	font-size: 12px;
+	font-family: Tahoma, Geneva, sans-serif;
+	margin: 0px;
+}
+
+/*################################ Tabs-3 Cultura ########################################*/
+#tabs-3 ul{
+	margin: 0px;
+	padding: 2px;
+	float: left;
+	list-style: none;
+
+}
+
+#tabs-3 ul li{
+	float: right;
+	width: 232px;
+	border-bottom: 1px dotted #069; /*Borda a baixo*/
+	padding: 2px;
+}
+
+#tabs-3 ul li p{
+	font-size: 12px;
+	font-family: Tahoma, Geneva, sans-serif;
+	margin: 0px;
+}
+/*################################ Tabs-4  Especiais ########################################*/
+#tabs-4 ul{
+	margin: 0px;
+	padding: 2px;
+	float: left;
+	list-style: none;
+
+}
+
+#tabs-4 ul li{
+	float: right;
+	width: 232px;
+	border-bottom: 1px dotted #069; /*Borda a baixo*/
+	padding: 2px;
+}
+
+#tabs-4 ul li p{
+	font-size: 12px;
+	font-family: Tahoma, Geneva, sans-serif;
+	margin: 0px;
+}
+
+/*################################ Tabs-5 Esportes ########################################*/
+#tabs-5 ul{
+	margin: 0px;
+	padding: 2px;
+	float: left;
+	list-style: none;
+
+}
+
+#tabs-5 ul li{
+	float: right;
+	width: 232px;
+	border-bottom: 1px dotted #069; /*Borda a baixo*/
+	padding: 2px;
+}
+
+#tabs-5 ul li p{
+	font-size: 12px;
+	font-family: Tahoma, Geneva, sans-serif;
+	margin: 0px;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  Patrocinadores !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+#main .patrocinadores{
+	width:260px;
+	height:257px;
+	background:#F8FAFC;
+	float:left;
+	border-right:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+}
+
+#main .patrocinadores ul{
+	margin:0;
+	padding:0;
+	float:left;
+	list-style:none;	
+}
+
+#main .patrocinadores ul li{
+	float:left;
+	width:250px;
+	border-bottom:1px dotted #069;
+	padding:5px;	
+}
+
+#main .patrocinadores ul li p{
+	font:12px Tahoma, Geneva, sans-serif;
+}
+
+#main .patrocinadores h1{
+	font:13px sans-serif;
+	font-weight:bold;
+	color:#000;
+	margin:2px;
+	padding:5px 5px 0 5px;
+}
+
+
+#main .patrocinadores img{
+	width:54px;
+	height:44px;
+	margin:0 2px;
+	float:left;
+	border:2px solid #333;
+}
+
+/*%%%%%%f%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ENQUETES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+#main .enquete{
+	width: 317px;
+	height: 257px;
+	background: #f8fafc;
+	float: right;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+}
+
+#main .enquete h2{
+	font-size: 14px;
+	font-family: sans-serif;
+	color: #069;
+	margin: 1px;
+	padding: 1px;
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+#main .enquete p{
+	font-size: 11px;
+	font-family: sans-serif;
+	color: #000;
+	text-align: justify;
+	margin: 2px;
+	padding: 2px;
+}
+
+/*++++++++++++++++++++++++++++++++++ AREA CHAMADAS SIDEBAR ++++++++++++++++++++++++++++++++++++++++++*/
+#sidebar-a{
+	width: 13.750em;
+	height: 1270px;
+	float: left;
+	background: #FFF;
+	border-top: 1px solid #ccc;
+}
+
+#sidebar-a h1{
+	font-size: 14px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #000;
+	margin: 5px;
+}
+
+#sidebar-a p{
+	font-size: 12px;
+	font-family: sans-serif;
+	color: #000;
+	margin: 5px;
+	text-align: left;
+}
+
+#sidebar-a img{
+	width: 202px;
+	height: 100px;
+	margin: 5px;
+	padding: 2px;
+	border: 2px solid #ccc;
+}
+
+/*SIDEBAR B*/
+#sidebar-b{
+	width: 220px;
+	height: 1270px;
+	float: left;
+	background: #fff;
+	border-left: 1px solid #ccc; /*Margem à esquerda*/
+	border-top:  1px solid #ccc;
+	list-style: none;
+}
+
+#sidebar-b h1{
+	font-size: 15px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #000;
+	margin: 5px;
+	text-transform: uppercase;
+}
+
+
+#sidebar-b h2{
+	font-size: 13px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #000;
+	margin: 5px;
+	text-transform: uppercase;
+}
+
+#sidebar-b p{
+	font-size: 12px;
+	font-family: sans-serif;
+	color: #000;
+	margin: 5px;
+	text-align: left;
+}
+
+#sidebar-b img{
+	width: 202px;
+	height: 160px;
+	margin: 5px;
+	padding: 2px;
+	border: 2px solid #ccc;
+}
+
+/*¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨     I  N   F   O   ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨*/
+#info{
+	width: 99.8%;
+	height: 135px;
+	background-color: #FAFAFA;
+	float: left;
+	margin: 5px 0px 5px 0px;
+	border: 1px solid #ccc;
+}
+
+#info h1{
+	font-size: 13px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #000;
+	margin: 5px;
+	padding: 5px;
+}
+
+
+#info h3{
+	font-size: 11px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #000;
+	margin: 5px;
+	padding: 5px;
+}
+
+#info p{
+	font-size: 11px;
+	font-family: sans-serif;
+	color: #000;
+	margin: 5px;
+	text-align: justify;
+	padding: 5px;
+}
+
+#info .col1{
+	width: 240px;
+	height: 135px;
+	float: left;
+
+}
+
+#info .col2{
+	width: 240px;
+	height: 135px;
+	float: left;
+	border-left: 1px solid #ccc;
+}
+
+#info .col3{
+	width: 240px;
+	height: 135px;
+	float: left;
+	border-left: 1px solid #ccc;
+}
+
+#info .col4{
+	width: 240px;
+	height: 135px;
+	float: left;
+	border-left: 1px solid #ccc;
+}
+
+
+/*¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬   NEWS LETER ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬*/
+#news{
+	width: 99.8%;
+	height: 109px;
+	float: left;
+	color: #000;
+	background-color: #f3f8f8;
+	border: 1px solid #ccc;
+}
+
+#news h1{
+	font-size: 16px;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-align: left;
+	margin: 5px 5px 5px 30px;
+}
+
+#news p{
+	font-size: 13px;
+	font-family: sans-serif;
+	margin: 0 20px 2px 30px;
+}
+
+/*(((((((((((((((((((((((((((((((  F O O T E R )))))))))))))))))))))))))))))))))))))))))))))*/
+
+#rodape{
+	width: 99.8%;
+	height: 150px;
+	margin: 4px auto;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	clear: both;	
+}
+
+#rodape p{
+	font: 11px sans-serif;
+	color: #000;
+	margin: 5px;
+	padding: 10px;
+	text-align: center;
+}
+
+#rodape img{
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+	padding: 2px;
+	border: 2px solid #ccc;
+}
+
+/*""""""""""""""""""""""""""""""""" GRIDE DE EXIBIÇÃO DE PAGINAS """""""""""""""""""""""""""""""*/
+#paginas{
+	width: 719px;
+	float: left;
+	background: #fff;
+	border-right: 1px solid #ccc;
+}
+
+#paginas img{
+	width: 500px;
+	margin: auto;
+}
+#paginas .texto{
+	margin: 10px;
+}
+
+#paginas .texto h1{
+	font-size: 20px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #000;
+	margin: 3px;
+}
+
+#paginas .texto p{
+	font-size: 12px;
+	font-family: sans-serif;
+	color: #000;
+	margin: 5px;
+	text-align: justify;
+
+}
+
+#paginas .categorias{
+	margin: 0px;
+	padding: 2px;
+	float: left;
+	list-style: none;
+}
+
+#paginas .categorias ul li{
+	float: left;
+	width: 100%;
+	border-bottom: 1px dotted #069;
+	padding: 2px;
+	background-color: #f2f8f9;
+} 
+
+#paginas .categorias ul li p{
+	font-size: 12px;
+	font-family: sans-serif;
+	margin: 0px;
+}
+
+#paginas .categorias ul li p a{
+	text-decoration: none;
+}
+
+#paginas .categorias ul li:hover{
+	background-color: #9cf;
+}
+
+#paginas .categorias img{
+	width: 100px;
+	height: 75px;
+	text-align: left;
+	margin: 2px;
+	float: left;
+	border: 2px solid #333;
+}
+/*((((((((((((((((((((( BLOCO DE ESTILIZAÇÃO DA GALERIA )))))))))))))))))))))))))*/
+#galeria{
+	background: #d9d6c3;
+	width: 99%;
+	zoom: 1;
+	border: 1px solid #999;
+	margin: auto;
+	margin-bottom: 4px;
+}
+
+#galeria h1{
+	font-size: 13px;
+	font-family: sans-serif;
+	color: #066;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 2px 5px 2px 5px;
+	border-bottom: 2px solid #066;
+}
+
+#galeria p{
+	font-size: 12px;
+	font-family: sans-serif;
+	color: #066;
+	margin: 2px 5px 2px 5px;	
+}
+
+#galeria .galeria {
+	display: -moz-inline-stack;
+	display: inline-block;
+	*display: inline;
+	position: relative;
+	vertical-align: top;
+	margin: 2px;
+	width: 94px;
+	height: 74px;
+	opacity: 0.87;
+
+}
+
+#galeria .galeria img{
+	display: block;
+	border:none;
+	margin: auto;
+	width: 90px;
+	height: 70px;
+}
+
+#galeria .galeria a{
+	margin: 0;
+
+}
+
+#galeria .galeria a:hover , #galeria .galeria:hover{
+	text-decoration: underline;
+	opacity: 1;
+
+}
+
+form input{
+	background: #5d8c8b;
+	border: 1px solid #999;
+	font-size: 12px;
+	color: #333;
+	height: 25px;
+}
+
+form input:hover{
+	background: #66ccff;
+	border: 1px solid #999;
+	font-size: 12px;
+	color: #333;
+}
+
+form .button{
+	width: 100px;
+	background: #39f;
+	border: #999;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	color: #fff;
+	font-weight: bold;
+}
+
+form .button:hover{
+	width: 100px;
+	background: #069;
+	border: #999;
+}
+
+form textarea{
+	background: #5d8c8b;
+	border: 1px solid #999;
+	font-size: 12px;
+	color: #333;
+}
+
+form textarea:hover{
+	background: #66ccff;
+	border: 1px solid #999;
+	font-size: 12px;
+	color: #333;
+}
+
+#poollcontainer{
+	width: 99%;
+	padding: 2px;
+}
+
+#loader{
+	display: none;
+	text-align: center;
+}
+.option{
+	margin: 1px;
+}
+
+.option p{
+	line-height: 1.1em;/*Espaçamento vertical da linha*/
+	font-size: 0.85em;
+}
+
+.bar{
+	height: 4px;
+	background: #3399cc;
+}
+
+.yourvote{
+	background: #113399;
+}
+
+.btn{
+	width: 80px;
+	height: 20px;
+	background: #069;
+	text-align: center;
+	display: block;
+	margin: auto;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+.btn:hover{
+	background: #036;
+}
+
+/*(((((((((((((((((((((((( REDES SOCIAIS )))))))))))))))))))))*/
+/*¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢ DESTAQUES ¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢*/
+#serv{
+	background: #EDF3F5;
+	padding: 2px;
+	height: 180px;
+
+	/*$$$$$$ Divisão das colunas$$$$$$$$$$$*/
+		-moz-column-width: 300px;
+	   -moz-column-gap: 15px;
+	   -moz-column-rule: 1px solid #666;
+	   -webkit-column-width: 100px;
+	   -webkit-column-gap: 15px;
+	   -webkit-column-rule: 1px solid #666;
+
+   /*$$$$$$ Numero de Colunas $$$$$$$$$$$*/
+   -moz-column-count: 2;
+   -moz-column-gap: 15px;
+   -moz-column-rule: 1px solid #ccc;
+   -webkit-column-count: 3;
+   -webkit-column-gap: 15px;
+   -webkit-column-rule: 1px solid #ccc;
+
+
+}
+#serv h1{
+	font-size: 15px;
+	font-family: sans-serif;
+	color: #000;
+}
+
+#serv p{
+	font-size: 12px;
+	font-family: sans-serif;
+}
+
+#serv img{
+	width: 100px;
+	height: 100px;
+}
+

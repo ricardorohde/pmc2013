@@ -1,0 +1,81 @@
+/*CSS do painel administrativo*/
+
+
+.ok{
+	padding: 10px;
+	border: 1px solid #0f0;
+	background: #eaffd5;
+	font-size: 16px;
+	font-family: Tahoma;
+}
+
+.no{
+	padding: 10px;
+	border: 1px solid #f00;
+	background: #fdd;
+	font-size: 16px;
+	font-family: Tahoma;
+}
+#conteudo{
+	width: 540px;
+
+}
+
+#conteudo h1{
+	font-size: 14px;
+	font-family: "Trebuchet MS", arial, helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #069;
+	font-weight: bold;
+}
+
+#conteudo form{
+	background-color: #fff;
+	margin: 2px;
+}
+
+#conteudo fieldset{
+	border: 0;
+}
+
+#conteudo span{
+	display: block;
+	font-size: 14px;
+	font-family: "Trebuchet MS", arial, helvetica, sans-serif;
+	font-weight: bold;
+	color: #333;
+	margin: 5px 0;
+}
+
+#conteudo input{
+	width: 490px;
+	background: #f4f4f4;
+	border: 1px solid #333;
+	margin-left: 5px;
+}
+
+#conteudo textarea{
+	width: 490px;
+	background: #f4f4f4;
+	border: 1px solid #333;
+	margin-left: 5px;
+}
+
+#conteudo select{
+	background: #f4f4f4;
+	border: 1px solid #333;
+}
+
+#conteudo .cadastro_btn{
+	width: 150px;
+	display: block;
+	float: right;
+	margin-right: 10px;
+
+}
+
+#conteudo .cadastro_btn:hover{
+	background: #0cf;
+	cursor:pointer;
+}
+
